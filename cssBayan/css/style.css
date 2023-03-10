@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   border-top: 1px solid black;
 }
-.accordion__title:hover {
+.accordion__title:active {
   color: blue;
 }
 .accordion__content {
@@ -24,4 +24,8 @@ body {
   width: 400px;
   margin: 20px;
   display: none;
+}
+
+.accordion:hover .img_meme {
+  display: block;
 }

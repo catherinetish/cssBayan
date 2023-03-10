@@ -15,9 +15,10 @@ body{
       justify-content: space-between;
       border-top: 1px solid black ;
 
-      &:hover{
+      &:active{
          color: blue;
       }
+
    }
 
    &__content{
@@ -32,3 +33,6 @@ body{
    }
 }
 
+.accordion:hover .img_meme{
+   display: block;
+}
