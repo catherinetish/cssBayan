@@ -1,0 +1,13 @@
+.container {
+  max-width: 1280px;
+}
+
+.accordion__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img_meme {
+  width: 400px;
+}
