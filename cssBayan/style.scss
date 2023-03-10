@@ -1,5 +1,10 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
 .container{
    max-width: 1280px;
+   margin: 0 auto;
 }
 
 .accordion{
@@ -8,9 +13,22 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      border-top: 1px solid black ;
+
+      &:hover{
+         color: blue;
+      }
+   }
+
+   &__content{
+      display: flex;
+      justify-content: center;
+
+      .img_meme{
+         width: 400px;
+         margin: 20px;
+         display: none;
+      }
    }
 }
 
-.img_meme{
-   width: 400px;
-}
