@@ -7,6 +7,9 @@ body {
   margin: 0 auto;
 }
 
+.accordion {
+  cursor: pointer;
+}
 .accordion__title {
   display: flex;
   flex-direction: row;
@@ -25,7 +28,12 @@ body {
   margin: 20px;
   display: none;
 }
-
 .accordion:hover .img_meme {
   display: block;
+}
+.accordion:hover .img_icon {
+  display: none;
+}
+.accordion:target__content {
+  overflow: visible;
 }
