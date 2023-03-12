@@ -76,6 +76,9 @@ body {
 .cssBayan:hover .accordion__title {
   color: black;
 }
+.cssBayan:hover .accordion__title .img_icon {
+  display: block;
+}
 
 .accordion:active .accordion__title {
   color: blue;
