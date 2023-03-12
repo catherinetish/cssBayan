@@ -7,33 +7,50 @@ body {
   margin: 0 auto;
 }
 
-.accordion {
+.cssBayan .accordion {
   cursor: pointer;
 }
-.accordion__title {
+.cssBayan .accordion__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border-top: 1px solid black;
-}
-.accordion__title:active {
+  border-top: 1px solid rgb(215, 215, 215);
   color: blue;
 }
-.accordion__content {
+.cssBayan .accordion__title .img_icon {
+  display: none;
+}
+.cssBayan .accordion__title:hover {
+  color: black;
+}
+.cssBayan .accordion__content {
   display: flex;
   justify-content: center;
 }
-.accordion__content .img_meme {
+.cssBayan .accordion__content .img_meme {
   width: 400px;
   margin: 20px;
   display: none;
 }
-.accordion:hover .img_meme {
+.cssBayan .accordion:hover .img_meme {
   display: block;
 }
-.accordion:hover .img_icon {
-  display: none;
+.cssBayan .accordion:hover .img_icon {
+  display: block;
 }
-.accordion:target__content {
+.cssBayan .accordion:target__content {
   overflow: visible;
+}
+
+.cssBayan:hover .accordion__title {
+  color: black;
+}
+.cssBayan:hover .accordion__title:active {
+  color: blue;
+}
+.cssBayan:hover .accordion__title .img_icon {
+  display: block;
+}
+.cssBayan:hover .accordion__title .img_icon:active {
+  fill: blue;
 }

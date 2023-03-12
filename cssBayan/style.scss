@@ -7,45 +7,69 @@ body{
    margin: 0 auto;
 }
 
-.accordion{
+.cssBayan{
 
-   cursor: pointer;
+   .accordion{
 
-   &__title{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      border-top: 1px solid black ;
+      cursor: pointer;
+
+      &__title{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         border-top: 1px solid rgb(215, 215, 215) ;
+         color: blue;
+
+         .img_icon{
+            display: none;
+         }
+
+         &:hover{
+            color:black;
+         }
+      }
+
+      &__content{
+         display: flex;
+         justify-content: center;
+
+         .img_meme{
+            width: 400px;
+            margin: 20px;
+            display: none;
+         }
+      }
+
+      &:hover{
+
+         .img_meme{
+            display: block;
+         }
+         .img_icon{
+            display: block;
+         }
+      }
+
+      &:target{
+         &__content{
+            overflow: visible;
+            // доделать, чтобы фиксировался выбранный аккордеон
+         }
+      }
+   }
+}
+
+.cssBayan:hover .accordion__title{
+   color: black;
+   &:active{
+      color: blue;
+   }
+
+   .img_icon{
+      display: block;
 
       &:active{
-         color: blue;
-      }
-   }
-
-   &__content{
-      display: flex;
-      justify-content: center;
-
-      .img_meme{
-         width: 400px;
-         margin: 20px;
-         display: none;
-      }
-   }
-
-   &:hover{
-      .img_meme{
-         display: block;
-      }
-      .img_icon{
-         display: none;
-      }
-   }
-
-   &:target{
-      &__content{
-         overflow: visible;
-         // доделать, чтобы фиксировался выбранный аккордеон
+         fill: blue;
       }
    }
 }
